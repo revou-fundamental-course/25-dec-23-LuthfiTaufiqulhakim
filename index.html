@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SegiJaka</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ini nav -->
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="assets/logo.png" alt="Logo" />
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- jumbotron -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <section class="jumbotron">
+      <h1><img src="assets/logo.png" alt="" /></h1>
+
+      <a href="#" id="button-jumbotron" onclick="scrollToBottom()"
+        >Coba Sekarang</a
+      >
+    </section>
+
+    <main>
+      <!-- card -->
+      <section class="card">
+        <h2>Segitiga</h2>
+        <img src="assets/segi.png" alt="Avatar" />
+        <div class="container-card">
+          <h4><b>Keterangan :</b></h4>
+          <p>
+            Rumus luas Segitiga : L = 1/2 x a x t
+            <br />
+            L = luas segitiga (satuan luas) <br />
+            a = alas segitiga (satuan panjang) <br />
+            t = tinggi segitiga (satuan panjang)
+          </p>
+          <br />
+          <p>
+            Rumus Keliling Segitiga : K = S1 + S2 + S3
+            <br />
+            K = keliling segitiga (satuan keliling) <br />
+            A = sisi segitiga <br />
+            B = sisi segitiga <br />
+            C = sisi segitiga <br />
+          </p>
+        </div>
+      </section>
+
+      <!-- luas -->
+      <div class="input-luas">
+        <label for="alas">alas:</label>
+        <input type="number" id="alas" placeholder="" />
+
+        <label for="tinggi">tinggi:</label>
+        <input type="number" id="tinggi" placeholder="" />
+        <!-- tombol luas -->
+        <div class="buttons-luas">
+          <button id="hitung-luas-segitiga" onclick="calculateLuasSegitiga()">
+            Hitung
+          </button>
+          <button id="reset-luas-segitiga" onclick="resetLuasSegitiga()">
+            Reset
+          </button>
+
+          <!-- hasil luas -->
+          <section class="hasil-luas">
+            <p id="nilai-luas"></p>
+          </section>
+        </div>
+      </div>
+
+      <!-- keliling -->
+      <div class="input-keliling">
+        <label for="sisi1">sisi A:</label>
+        <input type="number" id="sisi1" placeholder="" />
+
+        <label for="sisi2">sisi B:</label>
+        <input type="number" id="sisi2" placeholder="" />
+
+        <label for="sisi3">sisi C:</label>
+        <input type="number" id="sisi3" placeholder="" />
+        <div class="buttons-keliling">
+          <button
+            id="hitung-keliling-segitiga"
+            onclick="calculateKelilingSegitiga()"
+          >
+            Hitung
+          </button>
+          <button
+            id="reset-keliling-segitiga"
+            onclick="resetKelilingSegitiga()"
+          >
+            Reset
+          </button>
+        </div>
+
+        <!-- hasil luas -->
+        <section class="hasil-keliling">
+          <p id="nilai-keliling"></p>
+        </section>
+      </div>
+      <br />
+    </main>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form
+          target="_blank"
+          action="https://formsubmit.co/f372b075a582ae3648e13e40d8e2c9e6"
+          method="POST"
+        >
+          <div class="col" id="col-contact">
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+
+          <div class="col">
+            <textarea
+              placeholder="Your Message"
+              class="form-control"
+              name="message"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Send</button>
+        </form>
+      </div>
+    </section>
+    <!-- ini shapes footer -->
+    <section class="footer"></section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

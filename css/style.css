@@ -1,0 +1,499 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 20px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+  background-color: #f87307;
+  padding: 60px;
+  padding-top: 10px;
+  --mask: radial-gradient(
+        34.99px at 50% calc(100% - 48px),
+        #000 99%,
+        #0000 101%
+      )
+      calc(50% - 60px) 0/120px 100%,
+    radial-gradient(34.99px at 50% calc(100% + 18px), #0000 99%, #000 101%) 50%
+      calc(100% - 30px) / 120px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.logo img {
+  height: 70px;
+  padding: 6px;
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+
+}
+
+nav ul li {
+  margin-right: 10px;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+nav ul li a:hover {
+  border-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+nav ul li a:active {
+  border-color: rgba(255, 255, 255, 0.39);
+  border-radius: 10px;
+}
+  
+
+
+
+/* ini jumbotron */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron {
+  
+  padding: 110px 0;
+  background: url(https://plus.unsplash.com/premium_photo-1676422355885-1dac463519d3?q=80&w=1390&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.jumbotron h1 {
+  font-size: 70px;
+  margin-bottom: 0;
+  margin-left: 40px;
+  margin-right: 40px;
+  
+
+}
+
+
+
+#button-jumbotron {
+  display: inline-block;
+  border: 2px solid #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #e7151544;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 10px 6px rgba(0, 0, 0, 0.24);
+  
+}
+
+#button-jumbotron:hover {
+  background: #18151544;
+  color: #ffffff;
+  
+}
+
+#button-jumbotron:active{
+  transform: translateY(4px);
+}
+
+
+
+
+.card {
+  margin: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 20px 20px 1px 1px #999;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+
+}
+
+.card > img {
+  width: 30%;
+}
+
+.input-luas {
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid #f87307;
+  background-color: #f87307;
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  box-shadow: 20px 20px 1px 1px #999;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.input-luas > #alas {
+  width: 30%;
+  justify-self: center;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 20px;
+  border: #f87307;
+}
+
+.input-luas > #tinggi {
+  width: 30%;
+  justify-self: center;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 20px;
+  border: #f87307;
+}
+
+.hasil-luas > #nilai-luas {
+  border-radius: 25px;
+  text-align: center;
+}
+#hitung-luas-segitiga {
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#hitung-luas-segitiga:hover {
+  background-color: #3e8e41;
+}
+
+#hitung-luas-segitiga:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#reset-luas-segitiga {
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #e93002;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#reset-luas-segitiga:hover {
+  background-color: #c2310d;
+}
+
+#reset-luas-segitiga:active {
+  background-color: #c2310d;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.hasil-luas > #nilai-luas {
+  text-align: center;
+  background-color: #fff;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.input-keliling {
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid #f87307;
+  background-color: #f87307;
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  box-shadow: 20px 20px 1px 1px #999;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+}
+
+.input-keliling > #sisi1 {
+  width: 30%;
+  justify-self: center;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 20px;
+  border: #f87307;
+}
+.input-keliling > #sisi2 {
+  width: 30%;
+  justify-self: center;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 20px;
+  border: #f87307;
+}
+.input-keliling > #sisi3 {
+  width: 30%;
+  justify-self: center;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 20px;
+  border: #f87307;
+}
+
+#hitung-keliling-segitiga {
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#hitung-keliling-segitiga:hover {
+  background-color: #3e8e41;
+}
+
+#hitung-keliling-segitiga:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#reset-keliling-segitiga {
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #e93002;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#reset-keliling-segitiga:hover {
+  background-color: #c2310d;
+}
+
+#reset-keliling-segitiga:active {
+  background-color: #c2310d;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.hasil-keliling > #nilai-keliling {
+  text-align: center;
+  background-color: #fff;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 25px;
+}
+
+.footer {
+  background-color: #f87307;
+  padding: 60px;
+  padding-top: 10px;
+  --mask: radial-gradient(43.5px at 50% 61.5px, #000 99%, #0000 101%)
+      calc(50% - 60px) 0/120px 100%,
+    radial-gradient(43.5px at 50% -31.5px, #0000 99%, #000 101%) 50% 30px/120px
+      100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  
+}
+
+
+#contact{
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid #f87307;
+  background-color: #f87307;
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  box-shadow: 20px 20px 1px 1px #999;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  
+}
+
+.col>.form-control{
+  border-radius: 25px;
+  border: 2px solid #f87307;
+  padding: 10px;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.btn-submit{
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.btn-submit:hover{
+  background-color: #3e8e41;
+}
+.btn-submit:active{
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  
+
+  header {
+    padding: 30px;
+    padding-bottom: 60px;
+    padding-top: 30px;
+    position: relative;
+  }
+
+  body{
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+    font-size: 13px;
+  }
+
+  .logo img {
+    
+    width: 70%;
+    height: 70%;
+    margin-left: 5px;
+    
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+ .jumbotron{
+  
+ }
+
+ .jumbotron img{
+  width: 100%;
+ }
+  
+  .card {
+    margin: 40px;
+  }
+
+  .card > img {
+    width: 50%;
+  }
+
+  .input-luas,
+  .input-keliling {
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+  }
+
+  .input-luas > #alas,
+  .input-luas > #tinggi,
+  .input-keliling > #sisi1,
+  .input-keliling > #sisi2,
+  .input-keliling > #sisi3 {
+    width: 70%;
+    font-size: 16px;
+  }
+
+  #hitung-luas-segitiga,
+  #reset-luas-segitiga,
+  #hitung-keliling-segitiga,
+  #reset-keliling-segitiga {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .hasil-luas > #nilai-luas,
+  .hasil-keliling > #nilai-keliling-segitiga {
+    font-size: 16px;
+  }
+
+  .col>.form-control,
+  .btn-submit{
+    width: 50%;
+    font-size: 16px;
+    
+  }
+  
+ 
+  
+
+}
