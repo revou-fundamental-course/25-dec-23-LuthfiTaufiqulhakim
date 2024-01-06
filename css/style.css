@@ -438,6 +438,7 @@ html, body {
 
   nav ul li {
     margin-bottom: 10px;
+    width: max-content;
   }
 
  .jumbotron{
